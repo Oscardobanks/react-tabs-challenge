@@ -14,11 +14,43 @@ body {
     width: 960px;
     margin: 0 auto;
 }
-/* TODO: Add css here */
-.tabs {
 
+/* TODO: Add css here */
+.tab-headers {
+    display: flex;
 }
 
+.tab-header {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+    background-color: #333;
+    color: #888888;
+}
+
+.tab-header:hover {
+    color: white;
+    background-color: #262626;
+}
+
+.active-tab {
+    color: white;
+    background-color: #07597A !important;
+}
+
+.tab-content {
+    text-align: justify;
+    line-height: 2rem;
+    background-color: white;
+    padding: 50px 80px;
+}
+
+.tab-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
 
 @media only screen and (max-width: 960px) {
 
@@ -27,6 +59,12 @@ body {
     }
 
     .content {
+        padding: 50px;
+    }
+}
+
+@media (max-width: 600px) {
+    .tab-content {
         padding: 50px;
     }
 }
